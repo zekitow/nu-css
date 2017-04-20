@@ -818,9 +818,10 @@ html, body {
   margin: 0;
   padding: 0;
   background: #FFF;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 1.2;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #757575; }
 
 a, a:hover {
   text-decoration: none; }
@@ -828,8 +829,14 @@ a, a:hover {
 p {
   line-height: 2; }
 
+small {
+  font-size: 16px; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-weight: 300;
+  color: #000; }
+  h1small, h2small, h3small, h4small, h5small, h6small {
+    color: #757575; }
 
 h1 {
   font-size: 3.157em; }
