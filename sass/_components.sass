@@ -1,4 +1,5 @@
 @import 'bourbon/bourbon'
+@import 'mixins'
 
 // ##################################
 // ### table like
@@ -31,44 +32,22 @@
 
 
 // ##################################
-// ### bg styles
+// ### backgrounds styles
 // ##################################
 .bg-primary
-  background-color: $primary-color
-  color: #FFF
-  & h1,
-  & h2,
-  & h3,
-  & h4,
-  & h5,
-  & h6,
-  & p,
-  & small
-    color: #FFF
+  +backgroundColorClass($primary-color, #FFF)
 
 .bg-success
-  background-color: $success-color
-  color: #FFF
-
-  & h1,
-  & h2,
-  & h3,
-  & h4,
-  & h5,
-  & h6,
-  & p,
-  & small
-    color: #FFF
+  +backgroundColorClass($success-color, #FFF)
 
 .bg-danger
-  background-color: $danger-color
-  color: #FFF
-  & h1,
-  & h2,
-  & h3,
-  & h4,
-  & h5,
-  & h6,
-  & p,
-  & small
-    color: #FFF
+  +backgroundColorClass($danger-color, #FFF)
+
+.bg-medium
+  +backgroundColorClass($medium-color, #333)
+
+.bg-well
+  +backgroundColorClass($medium-well-color, #FFF)
+
+.bg-rare
+  +backgroundColorClass($medium-rare-color, #333)

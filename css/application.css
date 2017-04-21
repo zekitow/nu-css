@@ -864,6 +864,45 @@ hr {
   .bg-danger small {
     color: #FFF; }
 
+.bg-medium {
+  background-color: #B2B2B2;
+  color: #333; }
+  .bg-medium h1,
+  .bg-medium h2,
+  .bg-medium h3,
+  .bg-medium h4,
+  .bg-medium h5,
+  .bg-medium h6,
+  .bg-medium p,
+  .bg-medium small {
+    color: #333; }
+
+.bg-well {
+  background-color: #333333;
+  color: #FFF; }
+  .bg-well h1,
+  .bg-well h2,
+  .bg-well h3,
+  .bg-well h4,
+  .bg-well h5,
+  .bg-well h6,
+  .bg-well p,
+  .bg-well small {
+    color: #FFF; }
+
+.bg-rare {
+  background-color: #E5E5E5;
+  color: #333; }
+  .bg-rare h1,
+  .bg-rare h2,
+  .bg-rare h3,
+  .bg-rare h4,
+  .bg-rare h5,
+  .bg-rare h6,
+  .bg-rare p,
+  .bg-rare small {
+    color: #333; }
+
 html, body {
   height: 100%;
   margin: 0;
