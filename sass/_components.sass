@@ -27,6 +27,15 @@
 .text-danger
   color: $danger-color
 
+.text-medium
+  color: $medium-color
+
+.text-well
+  color: $well-color
+
+.text-rare
+  color: $rare-color
+
 .text-bold
   font-weight: bold
 
@@ -47,7 +56,56 @@
   +backgroundColorClass($medium-color, #333)
 
 .bg-well
-  +backgroundColorClass($medium-well-color, #FFF)
+  +backgroundColorClass($well-color, #FFF)
 
 .bg-rare
-  +backgroundColorClass($medium-rare-color, #333)
+  +backgroundColorClass($rare-color, #333)
+
+// ##################################
+// ### buttons styles
+// ##################################
+button, .btn
+  +buttonAndLabelMargins
+  +button($primary-color, #FFF)
+  +hoverButton($primary-color, #FFF)
+  +defaultShadow
+  @media (max-width : 480px)
+    width: 100%
+    display: block
+    text-align: center
+
+button[disabled], .btn-disabled
+  @extend .btn
+  +button($rare-color, $medium-color)
+  cursor: not-allowed
+  &:hover, &:active
+    background-color: $rare-color
+    color: $medium-color
+
+.btn-success
+  @extend .btn
+  +buttonColors($success-color, #FFF)
+  +hoverButton($success-color, #FFF)
+
+.btn-danger
+  @extend .btn
+  +buttonColors($danger-color, #FFF)
+  +hoverButton($danger-color, #FFF)
+
+.btn-muted
+  @extend .btn
+  +buttonColors($rare-color, $well-color)
+  +hoverButton($rare-color, $well-color)
+
+.btn-flat
+  @extend .btn
+  +buttonColors(rgba($well-color, 0.03), $well-color)
+  +hoverButton(rgba($well-color, 0.1), $well-color)
+
+  &.success-color
+    color: $success-color
+    +hoverButton(rgba($success-color, 0.1), $success-color)
+
+  &.danger-color
+    color: $danger-color
+    +hoverButton(rgba($danger-color, 0.1), $danger-color)
