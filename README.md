@@ -1,3 +1,7 @@
-# how to create visual identity for a new project
+# nu-css
 
-This is just base template about the concepts that you have to know before starting a new visual identity for a project.
+Less CSS classes at your html!
+
+## A simple project...
+
+It's a personal project about how to create a visual identity and components for web.
