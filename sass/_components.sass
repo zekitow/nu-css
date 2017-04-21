@@ -1,5 +1,8 @@
 @import 'bourbon/bourbon'
 
+// ##################################
+// ### table like
+// ##################################
 .table-like
   display: table
 
@@ -10,3 +13,62 @@
   .table-cell
     display: table-cell
     padding: 1em
+
+// ##################################
+// ### text styles
+// ##################################
+.text-primary
+  color: $primary-color
+
+.text-success
+  color: $success-color
+
+.text-danger
+  color: $danger-color
+
+.text-bold
+  font-weight: bold
+
+
+// ##################################
+// ### bg styles
+// ##################################
+.bg-primary
+  background-color: $primary-color
+  color: #FFF
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6,
+  & p,
+  & small
+    color: #FFF
+
+.bg-success
+  background-color: $success-color
+  color: #FFF
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6,
+  & p,
+  & small
+    color: #FFF
+
+.bg-danger
+  background-color: $danger-color
+  color: #FFF
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6,
+  & p,
+  & small
+    color: #FFF

@@ -14,25 +14,29 @@ html, body
   margin: 0
   padding: 0
   background: #FFF
-  font-size: 14px
+  font-size: $text-size
   line-height: 1.2
-  font-weight: 300
+  font-weight: 400
   color: $text-color
 
 a, a:hover
   text-decoration: none
 
 p
+  padding: 0 $text-size
   line-height: 2
 
 small
-  font-size: 16px
+  font-size: 70%
 
 h1,h2,h3,h4,h5,h6
   font-weight: 300
   color: $title-color
-  &small
+  padding: 0 $text-size
+  & > small
     color: $text-color
+    display: block
+    padding: 0.5em 0 1em
 
 h1
   font-size: 3.157em
@@ -57,3 +61,4 @@ section
   &.section-block
     margin-top: 1em
     margin-bottom: 1em
+
