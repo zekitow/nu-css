@@ -3,7 +3,7 @@
 // ##################################
 // ### application mixin
 // ##################################
-@mixin defaultRadius()
+@mixin defaultRadius
   -webkit-border-radius: 3px
   -moz-border-radius: 3px
   border-radius: 3px
@@ -15,11 +15,18 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#EEEEEE')";
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#EEEEEE');
 
+@mixin gradient
+  background: #ffffff
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 80%, #ededed 100%)
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 80%,#ededed 100%)
+  background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 80%,#ededed 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 )
+
 // ##################################
 // ### background mixin
 // ##################################
 @mixin backgroundColorClass($bg-color, $text-color)
-  background-color: $bg-color
+  background: $bg-color
   color: $text-color
   & h1,
   & h2,
@@ -34,19 +41,17 @@
 // ##################################
 // ### buttons mixin
 // ##################################
-@mixin buttonAndLabelMargins
-  padding: 1em 2em
-  margin: 0
-
 @mixin buttonColors($bg-color, $text-color)
   border: 0
-  background-color: $bg-color
+  background: $bg-color
   color: $text-color
   outline-color: $bg-color
 
 @mixin button($bg-color, $text-color)
   +buttonColors($bg-color, $text-color)
   +defaultRadius
+  padding: 1em 2em
+  margin: 0
   cursor: pointer
   font-size: 0.85em
   vertical-align: middle
@@ -58,8 +63,9 @@
 
 @mixin hoverButton($bg-color, $text-color)
   &:hover
-    background-color: darken($bg-color, 15%)
+    background: lighten($bg-color, 5%)
     color: $text-color
+
   &:active
-    background-color: lighten($bg-color, 3%)
+    background: darken($bg-color, 20%)
     color: $text-color
