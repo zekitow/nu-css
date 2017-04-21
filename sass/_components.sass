@@ -102,6 +102,10 @@ button[disabled], .btn-disabled
   +buttonColors(rgba($well-color, 0.03), $well-color)
   +hoverButton(rgba($well-color, 0.1), $well-color)
 
+  &.primary-color
+    color: $primary-color
+    +hoverButton(rgba($primary-color, 0.1), $primary-color)
+
   &.success-color
     color: $success-color
     +hoverButton(rgba($success-color, 0.1), $success-color)

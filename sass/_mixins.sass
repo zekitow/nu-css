@@ -18,9 +18,9 @@
 // ##################################
 // ### background mixin
 // ##################################
-@mixin backgroundColorClass($bgColor, $textColor)
-  background-color: $bgColor
-  color: $textColor
+@mixin backgroundColorClass($bg-color, $text-color)
+  background-color: $bg-color
+  color: $text-color
   & h1,
   & h2,
   & h3,
@@ -29,7 +29,7 @@
   & h6,
   & p,
   & small
-    color: $textColor
+    color: $text-color
 
 // ##################################
 // ### buttons mixin
@@ -38,14 +38,14 @@
   padding: 1em 2em
   margin: 0
 
-@mixin buttonColors($bgColor, $textColor)
+@mixin buttonColors($bg-color, $text-color)
   border: 0
-  background-color: $bgColor
-  color: $textColor
-  outline-color: $bgColor
+  background-color: $bg-color
+  color: $text-color
+  outline-color: $bg-color
 
-@mixin button($bgColor, $textColor)
-  +buttonColors($bgColor, $textColor)
+@mixin button($bg-color, $text-color)
+  +buttonColors($bg-color, $text-color)
   +defaultRadius
   cursor: pointer
   font-size: 0.85em
@@ -56,10 +56,10 @@
   outline-offset: 1px
   text-shadow: 0px 1px 2px rgba(#000, 0.1);
 
-@mixin hoverButton($bgColor, $textColor)
+@mixin hoverButton($bg-color, $text-color)
   &:hover
-    background-color: darken($bgColor, 15%)
-    color: $textColor
+    background-color: darken($bg-color, 15%)
+    color: $text-color
   &:active
-    background-color: lighten($bgColor, 3%)
-    color: $textColor
+    background-color: lighten($bg-color, 3%)
+    color: $text-color

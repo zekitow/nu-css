@@ -1016,6 +1016,14 @@ button[disabled], .btn-disabled {
   .btn-flat:active {
     background-color: rgba(59, 59, 59, 0.1);
     color: #333333; }
+  .btn-flat.primary-color {
+    color: #3CC2EC; }
+    .btn-flat.primary-color:hover {
+      background-color: rgba(19, 157, 200, 0.1);
+      color: #3CC2EC; }
+    .btn-flat.primary-color:active {
+      background-color: rgba(74, 198, 237, 0.1);
+      color: #3CC2EC; }
   .btn-flat.success-color {
     color: #60DBA2; }
     .btn-flat.success-color:hover {
@@ -1070,7 +1078,7 @@ h1, h2, h3, h4, h5, h6 {
   h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
     color: #6D6D6D;
     display: block;
-    padding: 0.5em 0 1em; }
+    padding: 0.3em 0 1em; }
 
 h1 {
   font-size: 3.157em; }
