@@ -1,0 +1,35 @@
+// ##################################
+// ### buttons styles
+// ##################################
+button, .btn
+  +buttonAndLabelMargins
+  +button(#FFF, $primary-color)
+  +hoverButton(rgba($primary-color, 0.1), $primary-color)
+  +defaultShadow
+  @media (max-width : 480px)
+    width: 100%
+    display: block
+    text-align: center
+
+button[disabled], .btn-disabled
+  @extend .btn
+  +button($rare-color, $medium-color)
+  cursor: not-allowed
+  &:hover, &:active
+    background-color: $rare-color
+    color: $medium-color
+
+.btn-primary
+  @extend .btn
+  +button($primary-color, #FFF)
+  +hoverButton($primary-color, #FFF)
+
+.btn-success
+  @extend .btn
+  +button(#FFF, $success-color)
+  +hoverButton(rgba($success-color, 0.1), $success-color)
+
+.btn-danger
+  @extend .btn
+  +button(#FFF, $danger-color)
+  +hoverButton(rgba($danger-color, 0.1), $danger-color)
