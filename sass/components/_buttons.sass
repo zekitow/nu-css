@@ -14,9 +14,11 @@ button[disabled], .btn-disabled
   @extend .btn
   +button($rare-color, $medium-color)
   cursor: not-allowed
+  box-shadow: none
   &:hover, &:active, &:focus
     background-color: $rare-color
     color: $medium-color
+    box-shadow: none
 
 .btn-primary
   background: $primary-color
