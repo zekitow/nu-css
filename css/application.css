@@ -924,7 +924,7 @@ button, .btn, button[disabled], .btn-disabled, .btn-primary, .btn-success, .btn-
   -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 1em 2em;
-  margin: 0;
+  margin: 5px;
   cursor: pointer;
   font-size: 0.85em;
   vertical-align: middle;
@@ -959,7 +959,7 @@ button[disabled], .btn-disabled {
   -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 1em 2em;
-  margin: 0;
+  margin: 5px;
   cursor: pointer;
   font-size: 0.85em;
   vertical-align: middle;
@@ -981,7 +981,7 @@ button[disabled], .btn-disabled {
   -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 1em 2em;
-  margin: 0;
+  margin: 5px;
   cursor: pointer;
   font-size: 0.85em;
   vertical-align: middle;
@@ -1177,6 +1177,9 @@ html, body {
   line-height: 1.2;
   font-weight: 400;
   color: #6D6D6D; }
+  @media (max-width: 480px) {
+    html, body {
+      font-size: 18px; } }
 
 a, a:hover {
   text-decoration: none; }
