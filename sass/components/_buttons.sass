@@ -5,7 +5,6 @@ button, .btn
   +button(#FFF, $primary-color)
   +hoverButton(rgba($primary-color, 0.1), $primary-color)
   +defaultShadow
-  +gradient
   @media (max-width : 480px)
     width: 100%
     display: block
@@ -15,7 +14,7 @@ button[disabled], .btn-disabled
   @extend .btn
   +button($rare-color, $medium-color)
   cursor: not-allowed
-  &:hover, &:active
+  &:hover, &:active, &:focus
     background-color: $rare-color
     color: $medium-color
 
@@ -24,15 +23,15 @@ button[disabled], .btn-disabled
   @extend .btn
   +button($primary-color, #FFF)
   +hoverButton($primary-color, #FFF)
+  &:hover, &:active
+    box-shadow: 0px 6px 6px -4px $primary-color
 
 .btn-success
-  +gradient
   @extend .btn
   color: $success-color
   +hoverButton(rgba($success-color, 0.1), $success-color)
 
 .btn-danger
-  +gradient
   @extend .btn
   color: $danger-color
   +hoverButton(rgba($danger-color, 0.1), $danger-color)
