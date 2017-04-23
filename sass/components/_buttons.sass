@@ -37,3 +37,13 @@ button[disabled], .btn-disabled
   @extend .btn
   color: $danger-color
   +hoverButton(rgba($danger-color, 0.1), $danger-color)
+
+.btn-well
+  @extend .btn
+  color: $well-color
+  +hoverButton(rgba($well-color, 0.1), $well-color)
+
+.btn-normal
+  @extend .btn
+  color: $text-color
+  +hoverButton(rgba($text-color, 0.1), $text-color)

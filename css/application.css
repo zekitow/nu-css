@@ -916,7 +916,7 @@ hr {
   .bg-rare small {
     color: #333; }
 
-button, .btn, button[disabled], .btn-disabled, .btn-primary, .btn-success, .btn-danger {
+button, .btn, button[disabled], .btn-disabled, .btn-primary, .btn-success, .btn-danger, .btn-well, .btn-normal {
   border: 0;
   background: #FFF;
   color: #3CC2EC;
@@ -937,16 +937,16 @@ button, .btn, button[disabled], .btn-disabled, .btn-primary, .btn-success, .btn-
   box-shadow: 0px 0.15em 3px rgba(0, 0, 0, 0.15);
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#EEEEEE')";
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#EEEEEE'); }
-  button:hover, .btn:hover, button[disabled]:hover, .btn-disabled:hover, .btn-primary:hover, .btn-success:hover, .btn-danger:hover {
+  button:hover, .btn:hover, button[disabled]:hover, .btn-disabled:hover, .btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-well:hover, .btn-normal:hover {
     background: rgba(83, 201, 238, 0.1);
     color: #3CC2EC;
     box-shadow: 0px 6px 6px -4px #3CC2EC; }
-  button:active, .btn:active, button[disabled]:active, .btn-disabled:active, .btn-primary:active, .btn-success:active, .btn-danger:active {
+  button:active, .btn:active, button[disabled]:active, .btn-disabled:active, .btn-primary:active, .btn-success:active, .btn-danger:active, .btn-well:active, .btn-normal:active {
     background: rgba(17, 139, 177, 0.1);
     color: #3CC2EC;
     box-shadow: 0px 6px 6px -4px #3CC2EC; }
   @media (max-width: 480px) {
-    button, .btn, button[disabled], .btn-disabled, .btn-primary, .btn-success, .btn-danger {
+    button, .btn, button[disabled], .btn-disabled, .btn-primary, .btn-success, .btn-danger, .btn-well, .btn-normal {
       width: 100%;
       display: block;
       text-align: center; } }
@@ -1023,6 +1023,28 @@ button[disabled], .btn-disabled {
     background: rgba(229, 15, 0, 0.1);
     color: #FF584C;
     box-shadow: 0px 6px 6px -4px #FF584C; }
+
+.btn-well {
+  color: #333333; }
+  .btn-well:hover {
+    background: rgba(64, 64, 64, 0.1);
+    color: #333333;
+    box-shadow: 0px 6px 6px -4px #333333; }
+  .btn-well:active {
+    background: rgba(0, 0, 0, 0.1);
+    color: #333333;
+    box-shadow: 0px 6px 6px -4px #333333; }
+
+.btn-normal {
+  color: #6D6D6D; }
+  .btn-normal:hover {
+    background: rgba(122, 122, 122, 0.1);
+    color: #6D6D6D;
+    box-shadow: 0px 6px 6px -4px #6D6D6D; }
+  .btn-normal:active {
+    background: rgba(58, 58, 58, 0.1);
+    color: #6D6D6D;
+    box-shadow: 0px 6px 6px -4px #6D6D6D; }
 
 textarea {
   width: 100% !important;
