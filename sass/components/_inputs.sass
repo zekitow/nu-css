@@ -48,3 +48,53 @@ textarea:not([readonly])
   &:focus
     border-bottom-color: $primary-color
     box-shadow: 0px 6px 6px -4px $primary-color
+
+input[type=checkbox]
+  cursor: pointer
+  opacity: 0
+  & + span:before
+    +defaultRadius
+    content: ''
+    margin-right: 0.5em
+    width: 1.4em
+    height: 1.4em
+    border-width: 2px
+    border-style: solid
+    border-color: $medium-color
+    display: inline-block
+  &:checked + span:before
+    border-width: 4px
+    border-color: $primary-color
+    border-top: 0
+    border-left: 0
+    width: 0.8em
+    margin-right: 1.1em
+    +transform(rotate(40deg))
+
+input[type=radio]
+  cursor: pointer
+  opacity: 0
+  & + span
+    position: relative
+  & + span:before
+    +roundedRadius
+    content: ''
+    margin-right: 0.5em
+    width: 1.4em
+    height: 1.4em
+    border-width: 2px
+    border-style: solid
+    border-color: $medium-color
+    display: inline-block
+  &:checked + span:before
+    background: #FFF
+    border-color: $primary-color
+  &:checked + span:after
+    +roundedRadius
+    content: ''
+    width: 0.75em
+    height: 0.75em
+    position: absolute
+    left: 0.3em
+    top: -0.1em
+    background: $primary-color
