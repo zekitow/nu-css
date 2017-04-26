@@ -9,9 +9,9 @@
   border-radius: 3px
 
 @mixin roundedRadius
-  -webkit-border-radius: 50%
-  -moz-border-radius: 50%
-  border-radius: 50%
+  -webkit-border-radius: 100%
+  -moz-border-radius: 100%
+  border-radius: 100%
 
 @mixin defaultShadow
   -moz-box-shadow: 0px 0.15em 3px rgba(0,0,0,0.15);
@@ -35,49 +35,3 @@
   & p,
   & small
     color: $text-color
-
-// ##################################
-// ### buttons mixin
-// ##################################
-@mixin buttonColors($bg-color, $text-color)
-  border: 0
-  background: $bg-color
-  color: $text-color
-
-@mixin button($bg-color, $text-color)
-  +buttonColors($bg-color, $text-color)
-  +defaultRadius
-  padding: 1em 2em
-  margin: 5px
-  cursor: pointer
-  font-size: 0.85em
-  vertical-align: middle
-  text-transform: uppercase
-  font-weight: 400
-  outline: 0
-  text-shadow: 0px 1px 2px rgba(#000, 0.1);
-
-@mixin hoverButton($bg-color, $text-color)
-  &:hover
-    background: lighten($bg-color, 5%)
-    color: $text-color
-    box-shadow: 0px 6px 6px -4px $text-color
-
-  &:active
-    background: darken($bg-color, 20%)
-    color: $text-color
-    box-shadow: 0px 6px 6px -4px $text-color
-
-
-// ##################################
-// ### inputs mixin
-// ##################################
-@mixin placeholder
-  &::-webkit-input-placeholder
-    @content
-  &:-moz-placeholder
-    @content
-  &::-moz-placeholder
-    @content
-  &:-ms-input-placeholder
-    @content

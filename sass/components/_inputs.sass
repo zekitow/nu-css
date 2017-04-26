@@ -1,7 +1,19 @@
 // ##################################
+// ### inputs mixin
+// ##################################
+@mixin placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+// ##################################
 // ### inputs styles
 // ##################################
-// 
 textarea
   width: 100% !important
   height: auto !important
@@ -56,8 +68,8 @@ input[type=checkbox]
     +defaultRadius
     content: ''
     margin-right: 0.5em
-    width: 1.4em
-    height: 1.4em
+    width: 1em
+    height: 1em
     border-width: 2px
     border-style: solid
     border-color: $medium-color
@@ -67,8 +79,9 @@ input[type=checkbox]
     border-color: $primary-color
     border-top: 0
     border-left: 0
-    width: 0.8em
-    margin-right: 1.1em
+    height: 1em
+    width: 0.6em
+    margin-right: 0.9em
     +transform(rotate(40deg))
 
 input[type=radio]
@@ -80,8 +93,8 @@ input[type=radio]
     +roundedRadius
     content: ''
     margin-right: 0.5em
-    width: 1.4em
-    height: 1.4em
+    width: $text-size
+    height: $text-size
     border-width: 2px
     border-style: solid
     border-color: $medium-color
@@ -92,9 +105,11 @@ input[type=radio]
   &:checked + span:after
     +roundedRadius
     content: ''
-    width: 0.75em
-    height: 0.75em
     position: absolute
-    left: 0.3em
-    top: -0.1em
+    width: $text-size / 2
+    height: $text-size / 2
+    left: $text-size / 4
+    right: 0
+    top: 3px
+    bottom: 0
     background: $primary-color

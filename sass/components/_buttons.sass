@@ -1,9 +1,42 @@
 // ##################################
+// ### buttons mixin
+// ##################################
+@mixin buttonColors($bg-color, $text-color)
+  border: 0
+  background: $bg-color
+  color: $text-color
+
+@mixin button($bg-color, $text-color)
+  +buttonColors($bg-color, $text-color)
+  +defaultRadius
+  padding: 1em 2em
+  margin: 5px
+  cursor: pointer
+  font-size: 0.85em
+  vertical-align: middle
+  text-transform: uppercase
+  font-weight: 400
+  outline: 0
+  text-shadow: 0px 1px 2px rgba(#000, 0.1);
+
+@mixin hoverButton($bg-color, $text-color)
+  &:hover
+    background: lighten($bg-color, 5%)
+    color: $text-color
+    box-shadow: 0px 6px 6px -4px $text-color
+
+  &:active
+    background: darken($bg-color, 20%)
+    color: $text-color
+    box-shadow: 0px 6px 6px -4px $text-color
+
+
+// ##################################
 // ### buttons styles
 // ##################################
 button, .btn
   +button(#FFF, $primary-color)
-  +hoverButton(rgba($primary-color, 0.1), $primary-color)
+  +hoverButton(rgba($primary-color, 0.2), darken($primary-color, 20%))
   +defaultShadow
   display: inline-block
   @media (max-width : 480px)
@@ -12,7 +45,6 @@ button, .btn
     text-align: center
 
 button[disabled], .btn-disabled
-  @extend .btn
   +button($rare-color, $medium-color)
   cursor: not-allowed
   box-shadow: none
@@ -23,28 +55,23 @@ button[disabled], .btn-disabled
 
 .btn-primary
   background: $primary-color
-  @extend .btn
   +button($primary-color, #FFF)
   +hoverButton($primary-color, #FFF)
   &:hover, &:active
     box-shadow: 0px 6px 6px -4px $primary-color
 
 .btn-success
-  @extend .btn
   color: $success-color
-  +hoverButton(rgba($success-color, 0.1), $success-color)
+  +hoverButton(rgba($success-color, 0.2), darken($success-color, 20%))
 
 .btn-danger
-  @extend .btn
   color: $danger-color
-  +hoverButton(rgba($danger-color, 0.1), $danger-color)
+  +hoverButton(rgba($danger-color, 0.2), $danger-color)
 
 .btn-well
-  @extend .btn
   color: $well-color
-  +hoverButton(rgba($well-color, 0.1), $well-color)
+  +hoverButton(rgba($well-color, 0.2), $well-color)
 
 .btn-normal
-  @extend .btn
   color: $text-color
   +hoverButton(rgba($text-color, 0.1), $text-color)
