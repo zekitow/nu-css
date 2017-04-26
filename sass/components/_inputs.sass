@@ -104,22 +104,8 @@ input[type=radio]
     border-style: solid
     border-color: $medium-color
     display: inline-block
-    +transition(border-color 0.15s ease-in-out)
-  & + span:after
-    +roundedRadius
-    content: ''
-    position: absolute
-    width: $text-size / 2
-    height: $text-size / 2
-    left: $text-size / 4
-    right: 0
-    top: 3px
-    bottom: 0
-    background: transparent
-    +transition(background 0.15s ease-in-out, transform 0.15s ease-in-out)
-    +transform(scale(0))
+    +transition(border-color 0.15s ease-in-out, background 0.15s ease-in-out, border-width 0.15s ease-in-out)
   &:checked + span:before
-    border-color: $primary-color
-  &:checked + span:after
-    background: $primary-color
-    +transform(scale(1))
+    // background: $primary-color
+    border-color: darken($primary-color, 10%)
+    border-width: $text-size / 2
