@@ -43,8 +43,10 @@ textarea:not([readonly])
   border-bottom-width: 2px
   border-bottom-style: solid
   border-bottom-color: rgba($medium-color, 0.8)
+  box-shadow: transparent
   font-weight: 400
   width: auto
+  +transition(border-bottom-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out)
   +placeholder
     color: rgba($medium-color, 0.7)
   @media (max-width : 480px)
@@ -70,10 +72,13 @@ input[type=checkbox]
     margin-right: 0.5em
     width: 1em
     height: 1em
+    border-top: 2px
+    border-left: 2px
     border-width: 2px
     border-style: solid
     border-color: $medium-color
     display: inline-block
+    +transition(transform 0.15s ease-in-out)
   &:checked + span:before
     border-width: 4px
     border-color: $primary-color
@@ -99,10 +104,8 @@ input[type=radio]
     border-style: solid
     border-color: $medium-color
     display: inline-block
-  &:checked + span:before
-    background: #FFF
-    border-color: $primary-color
-  &:checked + span:after
+    +transition(border-color 0.15s ease-in-out)
+  & + span:after
     +roundedRadius
     content: ''
     position: absolute
@@ -112,4 +115,11 @@ input[type=radio]
     right: 0
     top: 3px
     bottom: 0
+    background: transparent
+    +transition(background 0.15s ease-in-out, transform 0.15s ease-in-out)
+    +transform(scale(0))
+  &:checked + span:before
+    border-color: $primary-color
+  &:checked + span:after
     background: $primary-color
+    +transform(scale(1))

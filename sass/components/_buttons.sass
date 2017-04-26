@@ -38,6 +38,7 @@ button, .btn
   +button(#FFF, $primary-color)
   +hoverButton(rgba($primary-color, 0.2), darken($primary-color, 20%))
   +defaultShadow
+  +transition(background 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out)
   display: inline-block
   @media (max-width : 480px)
     width: 100%
