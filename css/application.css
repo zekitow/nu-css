@@ -1160,7 +1160,7 @@ textarea:not([readonly]) {
     input[type=search]:not([readonly]),
     textarea:not([readonly]) {
       width: 100%;
-      margin: 1em 0;
+      margin: 0em 0px 2em 0;
       display: block;
       text-align: left; } }
   input:not([type]):not([readonly]):hover,
@@ -1257,16 +1257,20 @@ label {
   font-size: 1em;
   color: #8c8c8c; }
 
-.fields {
-  display: flex; }
-  .fields .field {
-    margin: 0 0.5em; }
-    .fields .field label {
-      display: flex; }
-  .fields.inline {
-    display: block; }
-    .fields.inline .field label {
-      display: inline-block; }
+.fields .field {
+  margin: 0 0.5em; }
+
+@media (min-width: 768px) {
+  .fields {
+    display: flex; }
+    .fields .field {
+      margin: 0 0.5em; }
+      .fields .field label {
+        display: flex; }
+    .fields.inline {
+      display: block; }
+      .fields.inline .field label {
+        display: inline-block; } }
 
 .no-margins {
   padding: 1em;
