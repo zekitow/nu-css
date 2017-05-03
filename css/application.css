@@ -944,11 +944,11 @@ button, .btn {
   button:hover, .btn:hover {
     background: rgba(83, 201, 238, 0.2);
     color: #118bb1;
-    box-shadow: 0px 6px 6px -4px #118bb1; }
+    box-shadow: 0px 3px 3px -1px #118bb1; }
   button:active, .btn:active {
     background: rgba(17, 139, 177, 0.2);
     color: #118bb1;
-    box-shadow: 0px 6px 6px -4px #118bb1; }
+    box-shadow: 0px 3px 3px -1px #118bb1; }
   @media (max-width: 480px) {
     button, .btn {
       width: 100%;
@@ -998,57 +998,57 @@ button[disabled], .btn-disabled {
   .btn-primary:hover {
     background: #53c9ee;
     color: #FFF;
-    box-shadow: 0px 6px 6px -4px #FFF; }
+    box-shadow: 0px 3px 3px -1px #FFF; }
   .btn-primary:active {
     background: #118bb1;
     color: #FFF;
-    box-shadow: 0px 6px 6px -4px #FFF; }
+    box-shadow: 0px 3px 3px -1px #FFF; }
   .btn-primary:hover, .btn-primary:active {
-    box-shadow: 0px 6px 6px -4px #3CC2EC; }
+    box-shadow: 0px 3px 3px -1px #3CC2EC; }
 
 .btn-success {
   color: #60DBA2; }
   .btn-success:hover {
     background: rgba(117, 224, 174, 0.2);
     color: #27ae6f;
-    box-shadow: 0px 6px 6px -4px #27ae6f; }
+    box-shadow: 0px 3px 3px -1px #27ae6f; }
   .btn-success:active {
     background: rgba(39, 174, 111, 0.2);
     color: #27ae6f;
-    box-shadow: 0px 6px 6px -4px #27ae6f; }
+    box-shadow: 0px 3px 3px -1px #27ae6f; }
 
 .btn-danger {
   color: #FF584C; }
   .btn-danger:hover {
     background: rgba(255, 112, 102, 0.2);
     color: #FF584C;
-    box-shadow: 0px 6px 6px -4px #FF584C; }
+    box-shadow: 0px 3px 3px -1px #FF584C; }
   .btn-danger:active {
     background: rgba(229, 15, 0, 0.2);
     color: #FF584C;
-    box-shadow: 0px 6px 6px -4px #FF584C; }
+    box-shadow: 0px 3px 3px -1px #FF584C; }
 
 .btn-well {
   color: #333333; }
   .btn-well:hover {
     background: rgba(64, 64, 64, 0.2);
     color: #333333;
-    box-shadow: 0px 6px 6px -4px #333333; }
+    box-shadow: 0px 3px 3px -1px #333333; }
   .btn-well:active {
     background: rgba(0, 0, 0, 0.2);
     color: #333333;
-    box-shadow: 0px 6px 6px -4px #333333; }
+    box-shadow: 0px 3px 3px -1px #333333; }
 
 .btn-normal {
   color: #6D6D6D; }
   .btn-normal:hover {
     background: rgba(122, 122, 122, 0.1);
     color: #6D6D6D;
-    box-shadow: 0px 6px 6px -4px #6D6D6D; }
+    box-shadow: 0px 3px 3px -1px #6D6D6D; }
   .btn-normal:active {
     background: rgba(58, 58, 58, 0.1);
     color: #6D6D6D;
-    box-shadow: 0px 6px 6px -4px #6D6D6D; }
+    box-shadow: 0px 3px 3px -1px #6D6D6D; }
 
 textarea {
   width: 100% !important;
@@ -1173,7 +1173,7 @@ textarea:not([readonly]) {
   input[type=search]:not([readonly]):hover,
   textarea:not([readonly]):hover {
     border-bottom-color: #B2B2B2;
-    box-shadow: 0px 6px 6px -4px #B2B2B2; }
+    box-shadow: 0px 5px 5px -4px #B2B2B2; }
   input:not([type]):not([readonly]):focus,
   input[type=text]:not([readonly]):focus,
   input[type=password]:not([readonly]):focus,
@@ -1188,7 +1188,7 @@ textarea:not([readonly]) {
   input[type=search]:not([readonly]):focus,
   textarea:not([readonly]):focus {
     border-bottom-color: #3CC2EC;
-    box-shadow: 0px 6px 6px -4px #3CC2EC; }
+    box-shadow: 0px 5px 5px -4px #3CC2EC; }
 
 input[type=checkbox] {
   cursor: pointer;
@@ -1246,7 +1246,7 @@ input[type=radio] {
     transition: border-color 0.15s ease-in-out, background 0.15s ease-in-out, border-width 0.15s ease-in-out; }
   input[type=radio]:checked + span:before {
     border-color: #16afdf;
-    border-width: 8px; }
+    border-width: 5.16129px; }
 
 .no-margins {
   padding: 1em;

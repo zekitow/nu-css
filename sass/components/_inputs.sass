@@ -57,11 +57,11 @@ textarea:not([readonly])
 
   &:hover
     border-bottom-color: $medium-color
-    box-shadow: 0px 6px 6px -4px $medium-color
+    box-shadow: 0px 5px 5px -4px $medium-color
 
   &:focus
     border-bottom-color: $primary-color
-    box-shadow: 0px 6px 6px -4px $primary-color
+    box-shadow: 0px 5px 5px -4px $primary-color
 
 input[type=checkbox]
   cursor: pointer
@@ -106,6 +106,5 @@ input[type=radio]
     display: inline-block
     +transition(border-color 0.15s ease-in-out, background 0.15s ease-in-out, border-width 0.15s ease-in-out)
   &:checked + span:before
-    // background: $primary-color
     border-color: darken($primary-color, 10%)
-    border-width: $text-size / 2
+    border-width: $text-size / 3.1
