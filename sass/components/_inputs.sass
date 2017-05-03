@@ -32,9 +32,9 @@ input[type=tel]:not([readonly]),
 input[type=number]:not([readonly]),
 input[type=search]:not([readonly]),
 textarea:not([readonly])
-  padding: 0.5em 1em
+  padding: 0em 0.3em 0 0.3em
   margin: 0 0 0.8em 0
-  height: 3em
+  height: 2.5em
   border-top: 0
   border-left: 0
   border-right: 0
@@ -48,7 +48,8 @@ textarea:not([readonly])
   width: auto
   +transition(border-bottom-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out)
   +placeholder
-    color: rgba($medium-color, 0.7)
+    color: rgba($medium-color, 0.5)
+    font-weight: 300
   @media (max-width : 480px)
     width: 100%
     margin: 1em 0
@@ -70,8 +71,8 @@ input[type=checkbox]
     +defaultRadius
     content: ''
     margin-right: 0.5em
-    width: 1em
-    height: 1em
+    width: 1.1em
+    height: 1.1em
     border-top: 2px
     border-left: 2px
     border-width: 2px
@@ -84,9 +85,9 @@ input[type=checkbox]
     border-color: $primary-color
     border-top: 0
     border-left: 0
-    height: 1em
+    height: 1.1em
     width: 0.6em
-    margin-right: 0.9em
+    margin-right: 1em
     +transform(rotate(40deg))
 
 input[type=radio]
@@ -108,3 +109,19 @@ input[type=radio]
   &:checked + span:before
     border-color: darken($primary-color, 10%)
     border-width: $text-size / 3.1
+
+label
+  margin: 0.5em 0 0 0.3em
+  font-size: 1em
+  color: darken($medium-color, 15%)
+
+.fields
+  display: flex
+  .field
+    margin: 0 0.5em
+    label
+      display: flex
+  &.inline
+    display: block
+    .field label
+      display: inline-block
