@@ -1,12 +1,12 @@
 @import 'bourbon/bourbon'
 
-@import './bootstrap-grid'
+@import './basic'
 @import './variables'
 @import './components'
 @import './mixins'
 @import './helpers'
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap')
 
 // @media (min-width: 768px)
 // @media (min-width: 992px)
@@ -21,11 +21,9 @@ html, body
   background: #FFF
   font-size: $text-size
   line-height: 1.2
-  font-weight: 400
+  font-weight: 300
   color: $text-color
-  -webkit-text-stroke: 0.47px
-  @media (max-width : 480px)
-    font-size: 18px
+  text-rendering: optimizeLegibility
 
 a, a:hover
   text-decoration: none
@@ -45,7 +43,8 @@ h1,h2,h3,h4,h5,h6
   & > small
     color: $text-color
     display: block
-    padding: 0.3em 0 1em
+    padding: 0
+    font-size: 65%
 
 h1
   font-size: 3.157em

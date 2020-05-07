@@ -4,12 +4,14 @@
   "description": "Base template about the concepts that you have to know before starting a new visual identity for a project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node-sass -w sass/ -o dist/css | uglifycss dist/css/nucss.css > dist/css/nucss.min.css",
+    "uglify": "uglifycss dist/css/nucss.css > dist/css/nucss.min.css"
   },
   "author": "José Ribeiro Filho",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "uglifycss": "0.0.29"
   }
 }
