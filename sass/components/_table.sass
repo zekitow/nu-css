@@ -4,7 +4,7 @@
 .table-like
   display: table
 
-  .table-row 
+  .table-row
     display: table-row
     padding: 0
 
@@ -13,3 +13,26 @@
     padding: 0 1em
     @media (max-width : 480px)
       display: block
+
+// ##################################
+// ### table
+// ##################################
+table
+  width: 100%
+  thead
+    border-bottom: 1px solid rgba(#CCC, 0.5)
+
+    th
+      text-align: left
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 80%
+
+  thead th,
+  tbody td,
+  tfoot td
+    padding: 2em 1em
+
+  tbody tr,
+  tfoot tr
+    border-bottom: 1px solid rgba(#CCC, 0.5)

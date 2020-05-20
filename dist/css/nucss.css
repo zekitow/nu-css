@@ -210,9 +210,6 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
   display: inline-block;
   max-width: 100%;
   height: auto; }
@@ -805,6 +802,177 @@ hr {
 .affix {
   position: fixed; }
 
+.alert {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0em 0.3em !important;
+  margin: 0.3em 0; }
+
+.alert-primary {
+  background: #3CC2EC;
+  color: #FFF; }
+  .alert-primary h1,
+  .alert-primary h2,
+  .alert-primary h3,
+  .alert-primary h4,
+  .alert-primary h5,
+  .alert-primary h6,
+  .alert-primary p,
+  .alert-primary small {
+    color: #FFF; }
+
+.alert-success {
+  background: #60DBA2;
+  color: #FFF; }
+  .alert-success h1,
+  .alert-success h2,
+  .alert-success h3,
+  .alert-success h4,
+  .alert-success h5,
+  .alert-success h6,
+  .alert-success p,
+  .alert-success small {
+    color: #FFF; }
+
+.alert-danger {
+  background: #FF584C;
+  color: #FFF; }
+  .alert-danger h1,
+  .alert-danger h2,
+  .alert-danger h3,
+  .alert-danger h4,
+  .alert-danger h5,
+  .alert-danger h6,
+  .alert-danger p,
+  .alert-danger small {
+    color: #FFF; }
+
+.alert-medium {
+  background: #B2B2B2;
+  color: #333; }
+  .alert-medium h1,
+  .alert-medium h2,
+  .alert-medium h3,
+  .alert-medium h4,
+  .alert-medium h5,
+  .alert-medium h6,
+  .alert-medium p,
+  .alert-medium small {
+    color: #333; }
+
+.alert-well {
+  background: #333333;
+  color: #FFF; }
+  .alert-well h1,
+  .alert-well h2,
+  .alert-well h3,
+  .alert-well h4,
+  .alert-well h5,
+  .alert-well h6,
+  .alert-well p,
+  .alert-well small {
+    color: #FFF; }
+
+.alert-rare {
+  background: #E5E5E5;
+  color: #333; }
+  .alert-rare h1,
+  .alert-rare h2,
+  .alert-rare h3,
+  .alert-rare h4,
+  .alert-rare h5,
+  .alert-rare h6,
+  .alert-rare p,
+  .alert-rare small {
+    color: #333; }
+
+.badge {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0.5em 1em !important;
+  font-size: 85%;
+  font-weight: bold; }
+
+.badge-primary {
+  background: #3CC2EC;
+  color: #FFF; }
+  .badge-primary h1,
+  .badge-primary h2,
+  .badge-primary h3,
+  .badge-primary h4,
+  .badge-primary h5,
+  .badge-primary h6,
+  .badge-primary p,
+  .badge-primary small {
+    color: #FFF; }
+
+.badge-success {
+  background: #60DBA2;
+  color: #FFF; }
+  .badge-success h1,
+  .badge-success h2,
+  .badge-success h3,
+  .badge-success h4,
+  .badge-success h5,
+  .badge-success h6,
+  .badge-success p,
+  .badge-success small {
+    color: #FFF; }
+
+.badge-danger {
+  background: #FF584C;
+  color: #FFF; }
+  .badge-danger h1,
+  .badge-danger h2,
+  .badge-danger h3,
+  .badge-danger h4,
+  .badge-danger h5,
+  .badge-danger h6,
+  .badge-danger p,
+  .badge-danger small {
+    color: #FFF; }
+
+.badge-medium {
+  background: #B2B2B2;
+  color: #333; }
+  .badge-medium h1,
+  .badge-medium h2,
+  .badge-medium h3,
+  .badge-medium h4,
+  .badge-medium h5,
+  .badge-medium h6,
+  .badge-medium p,
+  .badge-medium small {
+    color: #333; }
+
+.badge-well {
+  background: #333333;
+  color: #FFF; }
+  .badge-well h1,
+  .badge-well h2,
+  .badge-well h3,
+  .badge-well h4,
+  .badge-well h5,
+  .badge-well h6,
+  .badge-well p,
+  .badge-well small {
+    color: #FFF; }
+
+.badge-rare {
+  background: #E5E5E5;
+  color: #333; }
+  .badge-rare h1,
+  .badge-rare h2,
+  .badge-rare h3,
+  .badge-rare h4,
+  .badge-rare h5,
+  .badge-rare h6,
+  .badge-rare p,
+  .badge-rare small {
+    color: #333; }
+
 .table-like {
   display: table; }
   .table-like .table-row {
@@ -816,6 +984,24 @@ hr {
     @media (max-width: 480px) {
       .table-like .table-cell {
         display: block; } }
+
+table {
+  width: 100%; }
+  table thead {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5); }
+    table thead th {
+      text-align: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 80%; }
+  table thead th, table tbody td, table tfoot td {
+    padding: 1.5em 1em; }
+  table tbody td,
+  table tfoot td {
+    padding: 0.5em; }
+  table tbody tr,
+  table tfoot tr {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5); }
 
 .text-primary {
   color: #3CC2EC; }
@@ -1050,12 +1236,23 @@ button[disabled], .btn-disabled {
     color: #6D6D6D;
     box-shadow: 0px 3px 3px -1px #6D6D6D; }
 
+.btn-link {
+  box-shadow: none !important; }
+  .btn-link:hover, .btn-link:active {
+    background: none !important;
+    box-shadow: none !important;
+    color: #6D6D6D; }
+
 textarea {
   width: 100% !important;
   height: auto !important;
   display: block; }
 
-input:not([type]),
+select {
+  height: 2.5em;
+  padding: 0em 0.3em !important;
+  margin: 0.3em 0; }
+
 input[type=text],
 input[type=password],
 input[type=email],
@@ -1067,25 +1264,24 @@ input[type=datetime-local],
 input[type=tel],
 input[type=number],
 input[type=search],
+select,
 textarea {
-  padding: 0em 0.3em 0 0.3em;
-  margin: 0 0 0.8em 0;
-  height: 2.5em;
+  padding: 0em 0.3em;
+  line-height: 2.5;
   border-top: 0;
   border-left: 0;
   border-right: 0;
   outline-width: 0;
   outline-offset: 0;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgba(178, 178, 178, 0.8);
   box-shadow: transparent;
   font-weight: 400;
-  width: auto;
+  background: #FFF;
   -webkit-transition: border-bottom-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-transition: border-bottom-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-bottom-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  input:not([type])::-webkit-input-placeholder,
   input[type=text]::-webkit-input-placeholder,
   input[type=password]::-webkit-input-placeholder,
   input[type=email]::-webkit-input-placeholder,
@@ -1097,10 +1293,10 @@ textarea {
   input[type=tel]::-webkit-input-placeholder,
   input[type=number]::-webkit-input-placeholder,
   input[type=search]::-webkit-input-placeholder,
+  select::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
     color: rgba(178, 178, 178, 0.5);
     font-weight: 300; }
-  input:not([type]):-moz-placeholder,
   input[type=text]:-moz-placeholder,
   input[type=password]:-moz-placeholder,
   input[type=email]:-moz-placeholder,
@@ -1112,10 +1308,10 @@ textarea {
   input[type=tel]:-moz-placeholder,
   input[type=number]:-moz-placeholder,
   input[type=search]:-moz-placeholder,
+  select:-moz-placeholder,
   textarea:-moz-placeholder {
     color: rgba(178, 178, 178, 0.5);
     font-weight: 300; }
-  input:not([type])::-moz-placeholder,
   input[type=text]::-moz-placeholder,
   input[type=password]::-moz-placeholder,
   input[type=email]::-moz-placeholder,
@@ -1127,10 +1323,10 @@ textarea {
   input[type=tel]::-moz-placeholder,
   input[type=number]::-moz-placeholder,
   input[type=search]::-moz-placeholder,
+  select::-moz-placeholder,
   textarea::-moz-placeholder {
     color: rgba(178, 178, 178, 0.5);
     font-weight: 300; }
-  input:not([type]):-ms-input-placeholder,
   input[type=text]:-ms-input-placeholder,
   input[type=password]:-ms-input-placeholder,
   input[type=email]:-ms-input-placeholder,
@@ -1142,11 +1338,11 @@ textarea {
   input[type=tel]:-ms-input-placeholder,
   input[type=number]:-ms-input-placeholder,
   input[type=search]:-ms-input-placeholder,
+  select:-ms-input-placeholder,
   textarea:-ms-input-placeholder {
     color: rgba(178, 178, 178, 0.5);
     font-weight: 300; }
   @media (max-width: 480px) {
-    input:not([type]),
     input[type=text],
     input[type=password],
     input[type=email],
@@ -1158,12 +1354,12 @@ textarea {
     input[type=tel],
     input[type=number],
     input[type=search],
+    select,
     textarea {
       width: 100%;
       margin: 0em 0px 2em 0;
       display: block;
       text-align: left; } }
-  input:not([type]):hover,
   input[type=text]:hover,
   input[type=password]:hover,
   input[type=email]:hover,
@@ -1175,10 +1371,10 @@ textarea {
   input[type=tel]:hover,
   input[type=number]:hover,
   input[type=search]:hover,
+  select:hover,
   textarea:hover {
     border-bottom-color: #B2B2B2;
     box-shadow: 0px 5px 5px -4px #B2B2B2; }
-  input:not([type]):focus,
   input[type=text]:focus,
   input[type=password]:focus,
   input[type=email]:focus,
@@ -1190,6 +1386,7 @@ textarea {
   input[type=tel]:focus,
   input[type=number]:focus,
   input[type=search]:focus,
+  select:focus,
   textarea:focus {
     border-bottom-color: #3CC2EC;
     box-shadow: 0px 5px 5px -4px #3CC2EC; }
@@ -1197,7 +1394,7 @@ textarea {
 input[type=checkbox] {
   cursor: pointer;
   opacity: 0; }
-  input[type=checkbox] + span:before {
+  input[type=checkbox] + :before {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -1214,7 +1411,7 @@ input[type=checkbox] {
     -webkit-transition: transform 0.15s ease-in-out;
     -moz-transition: transform 0.15s ease-in-out;
     transition: transform 0.15s ease-in-out; }
-  input[type=checkbox]:checked + span:before {
+  input[type=checkbox]:checked + :before {
     border-width: 4px;
     border-color: #3CC2EC;
     border-top: 0;
@@ -1253,12 +1450,18 @@ input[type=radio] {
     border-width: 5.16129px; }
 
 label {
-  margin: 0.5em 0 0 0.3em;
-  font-size: 1em;
+  font-size: 80%;
+  font-weight: bold;
+  margin: 0;
   color: #8c8c8c; }
 
-.fields .field {
-  margin: 0 0.5em; }
+.fields {
+  margin: 0 0 1em 0; }
+  .fields .field {
+    margin: 0 0.5em; }
+    .fields .field span.hint {
+      display: block;
+      font-size: 80%; }
 
 @media (min-width: 768px) {
   .fields {
@@ -1266,7 +1469,8 @@ label {
     .fields .field {
       margin: 0 0.5em; }
       .fields .field label {
-        display: flex; }
+        display: flex;
+        position: relative; }
     .fields.inline {
       display: block; }
       .fields.inline .field label {
@@ -1275,6 +1479,22 @@ label {
 .no-margins {
   padding: 1em;
   margin: 0; }
+
+.right {
+  text-align: right; }
+
+.left {
+  text-align: left; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: bold; }
+
+.w100p {
+  display: block;
+  width: 100%; }
 
 @media (max-width: 480px) {
   .block-mobile {

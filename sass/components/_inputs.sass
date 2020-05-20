@@ -19,7 +19,11 @@ textarea
   height: auto !important
   display: block
 
-input:not([type]),
+select
+  height: 2.5em
+  padding: 0em 0.3em !important
+  margin: 0.3em 0
+
 input[type=text],
 input[type=password],
 input[type=email],
@@ -31,21 +35,21 @@ input[type=datetime-local],
 input[type=tel],
 input[type=number],
 input[type=search],
+select,
 textarea
-  padding: 0em 0.3em 0 0.3em
-  margin: 0 0 0.8em 0
-  height: 2.5em
+  padding: 0em 0.3em
+  line-height: 2.5
   border-top: 0
   border-left: 0
   border-right: 0
   outline-width: 0
   outline-offset: 0
-  border-bottom-width: 2px
+  border-bottom-width: 1px
   border-bottom-style: solid
   border-bottom-color: rgba($medium-color, 0.8)
   box-shadow: transparent
   font-weight: 400
-  width: auto
+  background: #FFF
   +transition(border-bottom-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out)
   +placeholder
     color: rgba($medium-color, 0.5)
@@ -67,7 +71,7 @@ textarea
 input[type=checkbox]
   cursor: pointer
   opacity: 0
-  & + span:before
+  & + :before
     +defaultRadius
     content: ''
     margin-right: 0.5em
@@ -80,7 +84,7 @@ input[type=checkbox]
     border-color: $medium-color
     display: inline-block
     +transition(transform 0.15s ease-in-out)
-  &:checked + span:before
+  &:checked + :before
     border-width: 4px
     border-color: $primary-color
     border-top: 0
@@ -111,12 +115,19 @@ input[type=radio]
     border-width: $text-size / 3.1
 
 label
-  margin: 0.5em 0 0 0.3em
-  font-size: 1em
+  font-size: 80%
+  font-weight: bold
+  margin: 0
   color: darken($medium-color, 15%)
 
-.fields .field
-  margin: 0 0.5em
+.fields
+  margin: 0 0 1em 0
+  .field
+    margin: 0 0.5em
+    span.hint
+      display: block
+      font-size: 80%
+
 @media (min-width: 768px)
   .fields
     display: flex
@@ -124,6 +135,8 @@ label
       margin: 0 0.5em
       label
         display: flex
+        position: relative
+
     &.inline
       display: block
       .field label

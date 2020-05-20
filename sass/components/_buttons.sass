@@ -76,3 +76,11 @@ button[disabled], .btn-disabled
 .btn-normal
   color: $text-color
   +hoverButton(rgba($text-color, 0.1), $text-color)
+
+.btn-link
+  box-shadow: none !important
+  &:hover,
+  &:active
+    background: none !important
+    box-shadow: none !important
+    color: $text-color

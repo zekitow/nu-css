@@ -1,5 +1,5 @@
 {
-  "name": "visual-identity-definition-model",
+  "name": "nu-css",
   "version": "0.0.1-alpha",
   "description": "Base template about the concepts that you have to know before starting a new visual identity for a project.",
   "main": "index.js",
